@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <style>
+            body{
+                background-color:sandybrown;
+            }
+
+            #msg-container {
+                width: 80%;
+                max-width: 1200px;
+            }
+            
+            #div{
+                margin-top: 550px;
+                margin-left: 5%;
+            }
+
+            #msg-container div{
+                background-color:greenyellow;
+                padding: 5px;
+                margin-left: 5%;
+                margin-top: 5%;
+            }
+    
+            
+        </style>
+    </head>
+
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+    <body>
+        <div id="msg-container"></div>
+        <div id="div">
+            <form id="send-container">
+                <input type="text" id="input" size="70" >
+                <button type="submit" id="sendbtn" >Send</button>
+            </form>
+        </div>
+        
+    </body>
+
+</html>
